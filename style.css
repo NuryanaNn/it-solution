@@ -1,0 +1,636 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header.sticky{
+    background: #303030;
+    box-shadow: 1px 2px 3px 0 var(--sticky-header);
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #373737;
+}
+
+body a{
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 4%;
+}
+
+nav a{
+    color: #fff;
+}
+
+nav ul li:last-child{
+    background-color: blue;
+    padding: 5px 10px;
+}
+
+.logo{
+    font-size: 25px;
+}
+
+.logo h3{
+    color: #fff;
+}
+
+.logo span{
+    color: red;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav li{
+    margin-right: 35px;
+}
+
+/* Bnaner */
+.banner{
+    background-image: url('bg1.png');
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    padding: 100px 4%;
+}
+
+.bannerText{
+    max-width: 50%;
+}
+
+.banner h1{
+    color: #fff;
+    font-size: 90px;
+    letter-spacing: 6px;
+}
+
+.banner h3{
+    color: #fff;
+    font-size: 60px;
+    font-weight: lighter;
+}
+
+.banner p{
+    color: #fff;
+}
+
+.banner .bannerButton{
+    margin-top: 30px;
+}
+
+.bannerButton button{
+    border: none;
+    padding: 10px 15px;
+}
+
+.bannerButton button:nth-child(1){
+    background-color: #f05454;
+    color: #fff;
+}
+
+.bannerButton button:nth-child(2){
+    background-color: transparent;
+    color: #f05454;
+    font-size: 15px;
+}
+
+.bannerButton i{
+    margin-right: 7px;
+    font-size: 20px;
+    margin-top: 2px;
+}
+
+/* Work */
+.work, .aboutUs, .portfolio, .testimonials, .ourTeam, .ourPricing, .blog, .contact{
+    margin-top: 100px;
+}
+
+.workTitle, .aboutTitle, .fortfolioTitle, .testititle, .teamTitle, .pricingTitle, .blogTitle, .contactTitle{
+    text-align: center;
+}
+
+.workTitle h3, .aboutTitle h3, .fortfolioTitle h3, .testititle h3, .teamTitle h3, .pricingTitle h3, .blogTitle h3, .contactTitle h3{
+    color: #f05454;
+    font-size: 25px;
+}
+
+.workTitle p, .aboutTitle p, .fortfolioTitle p, .testititle p, .teamTitle p, .pricingTitle p, .blogTitle p, .contactTitle p{
+    color: #fff;
+}
+
+.workContent{
+    padding: 0 4%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 40px;
+    margin-top: 70px;
+}
+
+.workContent .card{
+    width: 370px;
+    text-align: center;
+    color: #fff;
+    background-color: #f05454;
+    padding:40px 30px;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.workContent .card:after{
+    background-color: #6362e5;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    content: '';
+    z-index: 9;
+    transition: 0.5s;
+}
+
+.workContent .card:hover:after{
+    left: 0;
+    transition: 0.5;
+}
+
+.workTeks{
+    z-index: 10;
+    position: relative;
+}
+
+.workContent i{
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+.workContent h3{
+    margin-bottom: 15px;
+}
+
+/* About */
+.aboutContent{
+    padding: 0 4%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutContent .skill{
+    width: 45%;
+}
+
+.skillCard{
+    background-color: #545454;
+    height: 40px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.skills{
+    position: absolute;
+    left: 20px;
+    width: 98%;
+}
+
+.skills2{
+    position: absolute;
+    left: 20px;
+    width: 90%;
+}
+
+.skills3{
+    position: absolute;
+    left: 20px;
+    width: 65%;
+}
+
+.skills4{
+    position: absolute;
+    left: 20px;
+    width: 70%;
+}
+
+.skills5{
+    position: absolute;
+    left: 20px;
+    width: 55%;
+}
+
+.skillCard h3{
+    background-color: #6362e5;
+    width: 90%;
+    margin-top: 20px;
+    color: #fff;
+    padding: 10px;
+}
+
+.aboutContent img{
+    width: 700px;
+}
+
+/* Portfolio */
+.portfolioCategory{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.portfolioCategory ul{
+    display: flex;
+    list-style: none;
+}
+
+.portfolioCategory li{
+    color: #fff;
+    margin-right: 30px;
+    background-color: #f05454;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.portfolioCategory li:hover{
+    background-color: #6362e5;
+}
+
+.portfolioContent{
+    padding: 0 4%;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 40px;
+}
+
+.portfolioContent .card{
+    width: 370px;
+    cursor: pointer;
+    background-color: #303030;
+}
+
+.portfolioContent .images{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    transition: 0.5s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolioContent .view{
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    width: 80%;
+    text-align: center;
+    background-color: #6362e5;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.portfolio .card:hover img{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.portfolio .card img{
+    width: 100%;
+}
+
+.portfolio .teks{
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.portfolio .teks h3{
+    color: #f05454;
+}
+
+/* Contact Us */
+.reader{
+    margin-top: 70px;
+    background-color: #f05454;
+    padding: 70px 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reader .readerTeks{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.readerTeks h1{
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.readerTeks button{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 20px 25px;
+    margin-top: 20px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.readerTeks button:hover{
+    border: none;
+    transition: 1s;
+}
+
+/* Testimonials */
+.testimonialsContent{
+    margin-top: 60px;
+    padding: 0 4%;
+}
+
+.testimonialsContent .card{
+    background-color: #6362e5;
+    color: #fff;
+    width: 350px;
+}
+
+.testimonialsContent .owner{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.testimonials .rating i{
+    color: gold;
+}
+
+.testimonialsContent img{
+    border-radius: 50%;
+}
+
+.testimonials .quotes{
+    padding: 0 20px;
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+/* Team */
+.teamContent{
+    padding: 2rem 4%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #303030;
+}
+
+.teamContent .card{
+    width: 270px;
+}
+
+.teamContent .images{
+    width: 100%;
+}
+
+.teamContent img{
+    width: 100%;
+}
+
+.teamTeks .sci{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 5px 0;
+}
+
+.teamTeks .sci li a{
+    color: #fff;
+}
+
+.teamTeks{
+    text-align: center;
+    color: #fff;
+}
+
+.teamTeks h3{
+    color: #f05454;
+    margin-top: 10px;
+}
+
+/* Pricing */
+.pricingContent{
+    padding: 0 4%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricingContent .card{
+    background-color: #303030;
+    width: 350px;
+    padding: 30px;
+    text-align: center;
+    border: none;
+}
+
+.pricingContent .card:hover{
+    border: 2px solid #f05454;
+    transition: 1s;
+}
+
+.pricingContent .card h3{
+    color: #6362e5;
+    font-size: 25px;
+    padding: 20px 0;
+}
+
+.pricing{
+    background-color: #f05454;
+    color: #fff;
+}
+
+.pricing h4{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.pricing span{
+    font-size: 20px;
+}
+
+.teks p{
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.pricingContent button{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #6362e5;
+    color: #fff;
+    font-size: 15px;
+}
+
+/* Blog */
+.blogContent{
+    padding: 3rem 4%;
+    background-color: #303030;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    margin-top: 60px;
+}
+
+.blogContent .card{
+    width: 350px;
+    background-color: #373737;
+}
+
+.blogContent .card .images{
+    width: 100%;
+}
+
+.blogContent .card img{
+    width: 100%;
+}
+
+.blogContent .teks{
+    padding: 20px;
+}
+
+.blogContent h4, .blogContent h5{
+    color: #6362e5;
+}
+
+.blogContent h3{
+    color: #f05454;
+    font-size: 20px;
+}
+
+.blogContent h6{
+    color: #fff;
+    margin-top: 5px;
+}
+
+/* Contact */
+.contactContent {
+    padding: 0 4%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.forms{
+    max-width: 48%;
+}
+
+.forms input{
+    margin-bottom: 30px;
+}
+
+.forms input, textarea{
+    width: 100%;
+    padding: 20px;
+    background-color: #303030;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+.forms button{
+    border: none;
+    background-color: #6362e5;
+    padding: 15px 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+textarea{
+    height: 270px;
+}
+
+.location{
+    background-color: #f05454;
+    padding: 30px;
+    color: #fff;
+}
+
+.location h3{
+    margin-top: 20px;
+}
+
+footer{
+    background-image: url('footerbg.png');
+    margin-top: 50px;
+    padding: 5rem 4%;
+    color: #fff;
+    justify-content: space-between;
+    display: flex;
+}
+
+footer a{
+    color: #fff;
+}
+
+.footer{
+    max-width: 400px;
+}
+
+.footer1 .sci{
+    display: flex;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.footer1 p{
+    margin-top: 30px;
+}
+
+.footer1 .sci li{
+    margin-right: 20px;
+    background-color: #2e3138;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+footer h3{
+    color: #f05454;
+    margin-bottom: 20px;
+}
+
+.footer2, .footer3{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer2 a, .footer3 a{
+    margin-bottom: 15px;
+}
